@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_hitam"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img_goride"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/menu_goride"
+                android:layout_margin="16dp"
+                android:onClick="goRide"/>
+            <ImageView
+                android:id="@+id/img_gofood"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/menu_gofood"
+                android:layout_margin="16dp"
+                android:onClick="goFood"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img_gomart"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/menu_gomart"
+                android:layout_margin="16dp"
+                android:onClick="goMart"/>
+            <ImageView
+                android:id="@+id/img_goshop"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/menu_gosend"
+                android:layout_margin="16dp"
+                android:onClick="goSend"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
